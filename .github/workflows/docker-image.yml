@@ -29,10 +29,10 @@ jobs:
       run: docker images
 
     - name: Tag Frontend Image
-      run: docker tag m347-laufzeitumgebungen-umsetzung-main-bbw-frontend-dev-func-v1:latest jutaro3/frontend:latest
+      run: docker tag dockerproject_bbw-frontend-dev-func-v1:latest jutaro3/frontend:latest
 
     - name: Tag Backend Image
-      run: docker tag m347-laufzeitumgebungen-umsetzung-main-bbw-backend-dev:latest jutaro3/backend:latest
+      run: docker tag dockerproject_bbw-backend-dev:latest jutaro3/backend:latest
 
     - name: Push Frontend Image
       run: docker push jutaro3/frontend:latest
