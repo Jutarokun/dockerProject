@@ -25,6 +25,9 @@ jobs:
     - name: Build Docker images
       run: docker-compose build
 
+    - name: display all Images
+      run: docker images
+
     - name: Tag Frontend Image
       run: docker tag m347-laufzeitumgebungen-umsetzung-main-bbw-frontend-dev-func-v1:latest jutaro3/frontend:latest
 
